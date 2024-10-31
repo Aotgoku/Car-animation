@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+
+}
+
+.birds{
+  background-image: url(birds.png);
+  width: 100px;
+  height: 150px;
+  background-size: cover;
+  position:relative;
+  left: 186px;
+  right: 250px;
+  top: 50px;
+  /* animation: birdmove linear 1s infinite; */
+  
+}
+
+.birds2{
+  background-image: url(mix.png);
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  position:relative;
+  left: 989px;
+  bottom: 170px;
+  animation: birdmove linear 1s infinite;
+  animation: birdmovex linear 15s infinite;
+  /* position: absolute; */
+}
+
+.trees{
+    height: 100vh;
+    width: 100%;
+    background-image: url(trees.png);
+    background-size: cover;
+     position:absolute;
+     bottom: 98px;
+}
+    
+
+
+.track{
+    height: 60vh;
+     width: 800vw; 
+     background-image: url(track.png);
+      background-repeat: repeat-x;
+      position: absolute;
+      top: 71vh;
+      animation: Move linear 5s infinite;
+
+}
+.car{
+   
+    height: 100px;
+  width: 350px;
+  background-image: url(car_body.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 261px;
+  top: 326px;
+  bottom: 200px;
+  animation: realtime linear 9s infinite  ;
+}
+
+
+
+
+.wheel1 img{
+    width: 70px;
+  position: relative;
+  left: 41px;
+  top: 35px;
+  animation: Rotation linear 2s infinite;
+}
+
+.wheel2 img{
+    width: 77px;
+    position: relative;
+    left: 213px;
+    top: -41px;
+    animation: Rotation linear 2s infinite;
+  }
+
+  body{
+    overflow: hidden;
+  /* animation: shake linear .6s infinite; */
+  }
+
+  @keyframes Rotation {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+  }
+
+  @keyframes Move {
+    100%{
+        transform: translateX(-500vw);
+    }
+    
+  }
+
+  @keyframes realtime {
+    0%{
+        transform: translateY(-2px);
+    }
+    50%{
+transform: translateY(3px);
+    }
+    100%{
+transform: translateY(-2px);
+    }
+    
+  }
+
+  @keyframes birdmove {
+    0%{
+    transform: translateY(-200px);
+    }
+    25%{
+      transform: translateY(200px);
+    }
+    50%{
+      transform: translateY(-200px);
+    }
+    75%{
+      transform: translateY(200px);
+    }
+    100%{
+      transform: translateY(-200px);
+    }
+  }
+
+  @keyframes birdmovex {
+    0%{
+    transform: translateX(-1px);
+    }
+    25%{
+      transform: translateX(-80px);
+    }
+    50%{
+      transform: translateX(-160px);
+    }
+    75%{
+      transform: translateX(-240px);
+    }
+    100%{
+      transform: translateX(-360px);
+    }
+  }
+
+
+ /* @keyframes shake {
+    0%{
+        transform: translateY(-50px);
+  }
+        25%{
+    transform: translateY(-1px);
+}
+    50%{
+transform: translateY(50px);
+    }
+    100%{
+transform: translateY(-50px);
+    }
+    
+  } */
+
+
